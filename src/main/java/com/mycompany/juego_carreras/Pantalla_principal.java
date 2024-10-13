@@ -14,8 +14,16 @@ public class Pantalla_principal {
 
     public static void main(String[] args) {
         //Declaración de variables.
+        CalificacionEdad calificacionEdad = new CalificacionEdad(12);
         Scanner teclado = new Scanner(System.in);
         Eleccion_vehiculo eleccion_vehiculo = new Eleccion_vehiculo();
+        
+        try {
+            System.out.println(calificacionEdad.mostrarCalificacionEdad());
+            Thread.sleep(5000);
+        } catch (Exception e) {
+            System.err.println("Error: " + e);
+        }
         
         try {
         
